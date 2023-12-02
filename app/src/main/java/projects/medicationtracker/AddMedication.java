@@ -240,7 +240,7 @@ public class AddMedication extends AppCompatActivity {
         );
 
         patientNameInput.setAdapter(patientNamesAdapter);
-
+        meButton.setChecked(true);
         if (medId == -1 || (medication != null && medication.getPatientName().equals("ME!"))) {
             meButton.setChecked(true);
         } else {
